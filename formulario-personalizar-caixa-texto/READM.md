@@ -1,0 +1,2 @@
+Formulário de Contato
+Este projeto é um formulário de contato estilizado utilizando HTML e CSS. O formulário inclui campos para o usuário inserir informações pessoais, como nome, telefone e e-mail. Também conta com um botão de envio e uma estilização personalizada para os campos de entrada.

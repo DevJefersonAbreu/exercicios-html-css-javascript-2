@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'inter', sans-serif;
+}
+
+header {
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646; /* O box-shadow no CSS é utilizado para aplicar sombras a elementos HTML. Ele adiciona profundidade e destaque aos elementos, criando um efeito visual de elevação ou afastamento do plano de fundo. A propriedade permite especificar a posição horizontal e vertical da sombra, o desfoque, a dispersão e a cor da sombra.*/
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 6rem; /*A unidade rem no CSS é utilizada para definir tamanhos relativos ao tamanho da fonte raiz do documento (<html>). Isso facilita a criação de layouts responsivos e consistentes, pois os tamanhos ajustam-se proporcionalmente ao valor da fonte raiz, permitindo um controle centralizado sobre a escala do design. */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px; /* não necessita colocar em rem pois não interfere muito na responsividade*/
+}
+
+.nav-link {
+    text-decoration: none; /* retira a linha de baixo dos itens*/
+    font-size: 1.15rem;
+    color: #6b7280;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    background-color: #0187a7;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.login-button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.fa-solid {
+    color: #fff;
+    font-size: 1.65rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer; /* quando passar o mause por cima aparecer a mãozinha em vez da seta*/
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;  
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}

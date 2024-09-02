@@ -1,0 +1,2 @@
+Formulário de Cadastro
+Este projeto é um formulário de cadastro estilizado utilizando HTML e CSS. O formulário inclui campos para o usuário inserir informações pessoais como nome, sobrenome, e-mail, número de celular, senha e gênero. Além disso, possui uma seção para login e uma imagem ilustrativa.
